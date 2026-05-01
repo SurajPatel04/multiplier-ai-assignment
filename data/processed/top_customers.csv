@@ -1,0 +1,11 @@
+customer_id,name,region,total_spend,churned
+C159,Shruti Chauhan,Central,108571.40999999999,False
+C072,Isha Trivedi,South,108094.685,True
+C100,Rajesh Malhotra,North,102165.89,False
+C021,Vikram Malhotra,East,86488.98,True
+C139,Tarun Arora,Unknown,73722.225,True
+C098,Ajay Ghosh,South,72147.03,False
+C103,Ritu Pandey,South,71573.32,True
+C012,Latha Arora,North,69472.51999999999,False
+C126,Aryan Jain,West,68371.66,False
+C145,Lalit Chandra,North,67520.57,False

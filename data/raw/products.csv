@@ -1,0 +1,31 @@
+product_id,product_name,category,unit_price
+P001,Laptop,Electronics,45999.0
+P002,Smartphone,Electronics,22999.0
+P003,Headphones,Accessories,3499.0
+P004,Keyboard,Accessories,2199.0
+P005,Mouse,Accessories,999.0
+P006,Monitor,Electronics,18999.0
+P007,Webcam,Accessories,3999.0
+P008,Tablet,Electronics,15999.0
+P009,Charger,Accessories,1299.0
+P010,Speaker,Electronics,5499.0
+P011,Printer,Electronics,12999.0
+P012,Router,Networking,4999.0
+P013,Hard Drive,Storage,6499.0
+P014,USB Hub,Accessories,1799.0
+P015,Smartwatch,Wearables,9999.0
+P016,Earbuds,Accessories,2999.0
+P017,Gaming Chair,Furniture,14999.0
+P018,Desk Lamp,Furniture,2499.0
+P019,Notebook,Stationery,299.0
+P020,Pen Drive,Storage,799.0
+P021,Graphics Card,Electronics,35999.0
+P022,SSD,Storage,8999.0
+P023,RAM Module,Electronics,4999.0
+P024,Power Bank,Accessories,2499.0
+P025,Cooling Pad,Accessories,1499.0
+P026,Cable Organizer,Accessories,499.0
+P027,VR Headset,Electronics,29999.0
+P028,Drone,Electronics,49999.0
+P029,Smart Bulb,Smart Home,1299.0
+P030,Security Camera,Smart Home,5999.0
