@@ -8,12 +8,6 @@ def load_csv_data(name: str) -> list[dict]:
     if path is None:
         raise HTTPException(status_code=404, detail=f"Unknown dataset: '{name}'")
 
-    if not path.exists():
-        raise HTTPException(
-            status_code=404,
-            detail=f"Data file not found: '{path.name}'. Run the analysis pipeline first.",
-        )
-
     try:
         df = pd.read_csv(path)
         if df.empty:
@@ -21,9 +15,13 @@ def load_csv_data(name: str) -> list[dict]:
                 status_code=404,
                 detail=f"Data file is empty: '{path.name}'.",
             )
-        # Replace NaN with None for clean JSON serialization
         df = df.where(df.notna(), None)
         return df.to_dict(orient="records")
+    except FileNotFoundError:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Data file not found: '{path.name}'. Run the analysis pipeline first.",
+        )
     except pd.errors.EmptyDataError:
         raise HTTPException(
             status_code=404,

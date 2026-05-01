@@ -13,7 +13,6 @@ def get_revenue(
     """Monthly revenue trend. Supports optional date-range filter via ?start=&end= query params."""
     data = load_csv_data("monthly_revenue")
 
-    # Bonus: date-range filter
     if start:
         data = [r for r in data if r.get("order_year_month", "") >= start]
     if end:
@@ -29,7 +28,6 @@ def get_top_customers(
     """Top 10 customers by total spend. Supports optional ?search= query param."""
     data = load_csv_data("top_customers")
 
-    # Bonus: search filter
     if search:
         search_lower = search.lower()
         data = [
