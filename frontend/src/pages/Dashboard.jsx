@@ -200,6 +200,19 @@ export default function Dashboard() {
             <RegionSummary data={regions} />
           </div>
         )}
+
+        {/* Footer */}
+        <footer className="text-center text-sm text-gray-500 mt-12 pt-6 border-t border-gray-200">
+          Built by Suraj Patel • 
+          <a 
+            href="https://github.com/SurajPatel04/suraj-patel-multiplier-ai-assignment" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="ml-1 text-blue-500 hover:text-blue-600 hover:underline transition-colors font-medium"
+          >
+            GitHub
+          </a>
+        </footer>
       </div>
     </div>
   );
